@@ -6,6 +6,6 @@ before_install:
 install:
   bundle install --deployment
 script:
-  bundle exec rake test
+  bundle exec rake spec
 cache:
   directories: vendor/bundle
