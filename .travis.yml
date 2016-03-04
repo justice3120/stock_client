@@ -1,8 +1,11 @@
 language: ruby
 rvm:
   - 2.1.1
-before_install: gem install bundler -v 1.11.2
-install: bundle install --deployment
+before_install:
+  gem install bundler -v 1.11.2
+install:
+  bundle install --deployment
+script:
+  bundle exec rake test
 cache:
   directories: vendor/bundle
-
